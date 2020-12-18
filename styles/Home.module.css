@@ -36,7 +36,7 @@
 }
 
 .title a {
-  color: #0070f3;
+  color: #c4ad2b;
   text-decoration: none;
 }
 
@@ -96,8 +96,8 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  color: #868404;
+  border-color: #e2f021;
 }
 
 .card h3 {

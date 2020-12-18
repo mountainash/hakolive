@@ -1,3 +1,23 @@
+# Welcome to Hako Live
+
+https://hakolive.vercel.app
+
+## What is Hako?
+
+Hako is a small (physically - it's a small shop) Craft Beer shop in Winterthur (the 5/6th biggest city in small Switzerland). While they are still open in these times of COVID, they can't run their usual in-store digestation and have resorted to sending out a harsé of 10 beers and holding a Zoom meetup about once a month (fun times!).
+
+## But what is this repo for?
+
+As a web nerd I decided to hack together some kind of mashup between the beers that Hako picks for the session and Untappd (a very popular beer-drinking social network).
+
+## Why?
+
+Well, I wanted too!?!
+
+AND I'm applying for a job at a workplace that has React and Next.js requirements which I don't yet have... time for some JIT coding - I also noticed that their own website is hosted on [vercel.app](https://vercel.app/) which provides free hosting - see the output at https://hakolive.vercel.app
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
