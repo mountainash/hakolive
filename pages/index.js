@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -17,6 +18,17 @@ export default function Home() {
         <p className={styles.description}>
           An online companion to your Hako Live dégustation
         </p>
+
+        <div className={styles.list}>
+          <ul>
+            <li>
+            Read{' '}
+            <Link href="/sessions/2020-12-18">
+              <a>Fri, 18 Dec 2020</a>
+            </Link>
+            </li>
+          </ul>
+        </div>
 
         <div className={styles.grid}>
           <a href="https://www.hakogetraenke.ch/?utm_source=mountainashhakolive" className={styles.card}>
@@ -47,26 +59,9 @@ export default function Home() {
             </p>
           </a>
         </div>
-
-        <section>
-          <h2>Beer List</h2>
-          <h3>Fri, 18 Dec 2020</h3>
-          <ul>
-            <li><a href="https://untappd.com/b/erusbacher-paul-bier-paul-01/26411">Paul Bier - 01</a></li>
-            <li><a href="https://untappd.com/b/anchor-brewing-company-liberty-ale/5173">Anchor Brewing Company - Liberty Ale</a></li>
-            <li><a href="https://untappd.com/b/trois-dames-ipa/18247">Trois Dames - IPA</a></li>
-            <li><a href="https://untappd.com/b/vibrant-forest-brewery-stone-sap/2657375">Vibrant Forest Brewery - Stone Sap</a></li>
-            <li><a href="https://untappd.com/b/brasserie-d-orval-orval/851">Brasserie d'Orval - Orval</a></li>
-            <li><a href="https://untappd.com/b/trois-dames-la-fraicheur-au-basilic/291724">Trois Dames - La Fraîcheur au Basilic</a></li>
-            <li><a href="https://untappd.com/b/ayinger-privatbrauerei-ayinger-celebrator/6683">Ayinger Privatbrauerei - Ayinger Celebrator</a></li>
-            <li><a href="https://untappd.com/b/st-laurentius-merry-christmas/4105279">St. Laurentius - Merry Christmas</a></li>
-            <li><a href="https://untappd.com/b/s-and-a-brewing-black/4105339">S&A Brewing - Blåck</a></li>
-            <li><a href="https://untappd.com/b/trois-dames-grande-dame/29273">Trois Dames - Grande Dame</a></li>
-          </ul>
-        </section>
       </main>
 
-      <footer className={styles.footer}>
+      <footer>
         <a
           href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
           target="_blank"
