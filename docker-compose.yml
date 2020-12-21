@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  nextjs:
+    image: dockette/vercel # https://github.com/dockette/vercel
+    env_file: .env # See https://vercel.com/docs/environment-variables#development-environment-variables
+    volumes:
+      - ./:/srv
+    ports:
+      - 3000:3000
+    command: vercel dev --confirm --listen 3000 --token $VERCEL_TOKEN
