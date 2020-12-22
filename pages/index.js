@@ -22,9 +22,8 @@ export default function Home() {
         <div className={styles.list}>
           <ul>
             <li>
-            Read{' '}
             <Link href="/sessions/2020-12-18">
-              <a>Fri, 18 Dec 2020</a>
+              <a>Hakodicht@home IV - Fri, 18 Dec 2020</a>
             </Link>
             </li>
           </ul>
@@ -33,7 +32,7 @@ export default function Home() {
         <div className={styles.grid}>
           <a href="https://www.hakogetraenke.ch/?utm_source=mountainashhakolive" className={styles.card}>
             <h3>What is Hako? &rarr;</h3>
-            <p>Hako is a small (physically - it's a small shop) Craft Beer shop in Winterthur (the 5/6th biggest city in small Switzerland). While they are still open in these times of COVID, they can't run their usual in-store digestation and have resorted to sending out a harsé of 10 beers and holding a Zoom meetup about once a month (fun times!).</p>
+            <p>Hako is a small (physically - it's a small shop) Craft Beer shop in Winterthur (the 5/6th biggest city in small Switzerland). While they are still open in these times of COVID, they can't run their usual in-store detestation and have resorted to sending out a harass of 10 beers and holding a Zoom meetup about once every two months (fun times!).</p>
           </a>
 
           <a href="https://github.com/mountainash/hakolive" className={styles.card}>
@@ -46,7 +45,7 @@ export default function Home() {
             className={styles.card}
           >
             <h3>Why? &rarr;</h3>
-            <p>Well, I wanted too!?! AND I'm applying for a job at a workplace that has React and Next.js requirements which I don't yet have... time for some JIT coding - I also noticed that their own website is hosted on [vercel.app](https://vercel.app/) which provides free hosting - see the output at https://hakolive.vercel.app</p>
+            <p>Well, I wanted too!?! AND I'm applying for a job at a workplace that has React and Next.js requirements which I don't yet have... time for some JIT coding - I also noticed that their own website is hosted on <a href="https://vercel.app/">vercel.app</a> which provides free hosting - see the output at https://hakolive.vercel.app</p>
           </a>
 
           <a
