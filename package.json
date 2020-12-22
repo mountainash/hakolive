@@ -1,6 +1,6 @@
 {
   "name": "hakolive",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -11,6 +11,7 @@
     "next": "10.0.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "sass": "^1.30.0",
     "swiper": "^6.4.5"
   }
 }
