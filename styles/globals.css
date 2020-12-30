@@ -1,6 +1,7 @@
 body {
-  padding: 0;
+  height: 100vh;
   margin: 0;
+  padding: 0;
   background: #e8dac5;
   color: #252822;
   font-family: Arial, Helvetica, sans-serif, serif;
@@ -28,4 +29,10 @@ footer a {
 
 footer img {
   margin-left: 0.5rem;
+}
+
+/* Swipper override */
+:root {
+  --swiper-theme-color: rgb(111,121,103);
+  --swiper-navigation-size: 50px;
 }

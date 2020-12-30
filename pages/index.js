@@ -47,16 +47,6 @@ export default function Home() {
             <h3>Why? &rarr;</h3>
             <p>Well, I wanted too!?! AND I'm applying for a job at a workplace that has React and Next.js requirements which I don't yet have... time for some JIT coding - I also noticed that their own website is hosted on <a href="https://vercel.app/">vercel.app</a> which provides free hosting - see the output at https://hakolive.vercel.app</p>
           </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
         </div>
       </main>
 

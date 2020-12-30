@@ -1,0 +1,106 @@
+.meta header {
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  z-index: 1000;
+  text-align: center;
+}
+
+.meta header a {
+  text-decoration: underline;
+}
+
+.main {
+  height: 100vh;
+}
+
+.main h2 .brand {
+  opacity: .7;
+}
+
+.image {
+  filter: grayscale(1) contrast(1.6) brightness(0.95);
+  mix-blend-mode: multiply;
+  object-fit: cover;
+  transition: filter .36s ease-in;
+  animation-name: fadeIn;
+  animation-duration: .7s;
+  animation-fill-mode: both;
+}
+
+.image:hover {
+  filter: none;
+  transition: filter .36s ease-in;
+}
+
+.swipercontainer {
+  height: 100vh;
+  margin: 4em 0;
+  padding: 3em;
+}
+
+.swiperslide {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 3em 3em 0;
+  border-radius: 10px;
+  background: #ccbfb0;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.beerinfo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  animation-name: fadeIn;
+  animation-duration: .7s;
+  animation-fill-mode: both;
+}
+
+.beerinfo ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-self: center;
+  width: 50%;
+}
+
+.beerinfo ul li {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.beerinfo ul li strong,
+.beerinfo ul li span {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.untappd {
+  text-align: center;
+}
+
+.untappd a {
+  display: inline-block;
+  padding: 1em;
+  background: #ffcb05;
+  border-radius: 30px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  line-height: 1;
+  color: #3e3322;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

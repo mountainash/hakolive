@@ -4,7 +4,7 @@ https://hakolive.vercel.app
 
 ## What is Hako?
 
-Hako is a small (physically - it's a small shop) Craft Beer shop in Winterthur (the 5/6th biggest city in small Switzerland). While they are still open in these times of COVID, they can't run their usual in-store digestation and have resorted to sending out a harsé of 10 beers and holding a Zoom meetup about once a month (fun times!).
+Hako is a small (physically - it's a small shop) Craft Beer shop in Winterthur (the 5/6th biggest city in small Switzerland). While they are still open in these times of COVID, they can't run their usual in-store degustation and have resorted to sending out a harsé of 10 beers and holding a Zoom meetup about once a month (fun times!).
 
 ## But what is this repo for?
 
@@ -42,7 +42,9 @@ To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial
+- [Next.js Examples](https://github.com/vercel/next.js/tree/canary/examples)
 - [Vercel CLI Documentation](https://vercel.com/docs/cli#commands/dev)
+- [React Documentation](https://reactjs.org/docs/)
 
 ## Deploy on Vercel
 
