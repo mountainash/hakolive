@@ -21,15 +21,6 @@
   font-size: 4rem;
 }
 
-.title a {
-  color: #7b6545;
-  text-decoration: none;
-}
-
-.title a:hover, .title a:focus, .title a:active {
-  text-decoration: underline;
-}
-
 .title,
 .description {
   text-align: center;
@@ -44,7 +35,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 3rem;
 }
 
 .card {
@@ -62,6 +52,7 @@
 .card:hover, .card:focus, .card:active {
   color: #4a5145;
   border-color: #6f7967;
+  text-decoration: none;
 }
 
 .card h3 {
@@ -76,7 +67,7 @@
 }
 
 .list a {
-  color: #7b6545;
+  color: var(--color-link);
 }
 
 .logo {

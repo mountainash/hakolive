@@ -22,7 +22,7 @@ export default function FirstProst() {
 				count: 1232,
 				fetched: '2020-12-16'
 			},
-			image: '/public/img/erusbacher-paul-bier-paul-01.png',
+			image: '/img/erusbacher-paul-bier-paul-01.png',
 			untappd: 'https://untappd.com/b/erusbacher-paul-bier-paul-01/26411'
 		},
 		{
@@ -118,27 +118,29 @@ export default function FirstProst() {
 				}
 			</div>
 			{beer.image &&
-				<Image
-					className={styles.image}
-					src={beer.image}
-					alt={`Photo of ${beer.name}`}
-					layout="fill"
-					unsized
-				/>
+				<div className={styles.image}>
+					<Image
+						src={beer.image}
+						alt={`Photo of ${beer.name}`}
+						width={300}
+						height={700}
+						layout="responsive"
+					/>
+				</div>
 			}
 		</SwiperSlide>
 	});
 
 	return (
 		<div>
+			<Head>
+				<title>Hako Live - 2020-12-18</title>
+				<link rel="icon" href="/favicon.ico" />
+			</Head>
 			<div className={styles.meta}>
-				<Head>
-					<title>Hako Live - 2020-12-18</title>
-					<link rel="icon" href="/favicon.ico" />
-				</Head>
 				<header>
 					<Link href="/">
-						<h1><a>Hako Live</a> - <span className={styles.title}>2020-12-18</span></h1>
+						<h1><a>Hako Live</a> &nbsp; <span className={styles.title}>2020-12-18</span></h1>
 					</Link>
 				</header>
 			</div>

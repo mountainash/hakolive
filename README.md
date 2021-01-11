@@ -4,7 +4,7 @@ https://hakolive.vercel.app
 
 ## What is Hako?
 
-Hako is a small (physically - it's a small shop) Craft Beer shop in Winterthur (the 5/6th biggest city in small Switzerland). While they are still open in these times of COVID, they can't run their usual in-store degustation and have resorted to sending out a harsé of 10 beers and holding a Zoom meetup about once a month (fun times!).
+Hako is a small (physically - it's a small shop) Craft Beer shop in Winterthur (the 5/6th biggest city in small Switzerland). While they are still open in these times of COVID, they can't run their usual in-store dégustation and have resorted to sending out a harsé of 10 beers and holding a Zoom meetup about once a month (fun times!).
 
 ## But what is this repo for?
 
@@ -33,6 +33,8 @@ Using [dockette/vercel](https://github.com/dockette/vercel) with NodeJS and [Ver
 
 1. Create a token at https://vercel.com/account/tokens
 1. Add the token value to `VERCEL_TOKEN=` key the `.env` file in the project root
+1. `docker-compose build`
+1. `docker-compose run nextjs npm install`
 1. `docker-compose up`
 1. Open http://localhost:3000
 
