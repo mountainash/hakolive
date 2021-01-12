@@ -4,7 +4,6 @@
 }
 
 .image {
-  max-height: 85%;
   filter: grayscale(1) contrast(1.6) brightness(0.95);
   mix-blend-mode: multiply;
   object-fit: cover;
@@ -42,13 +41,18 @@
   display: flex;
   flex-direction: column;
   align-content: center;
+  width: 100%;
   animation-name: fadeIn;
   animation-duration: .7s;
   animation-fill-mode: both;
 }
 
-.beerinfo .brand,
-.beerinfo ul strong {
+.beerinfo h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.beerinfo h2 .brand {
   color: var(--color-highlight);
 }
 
@@ -72,7 +76,12 @@
   flex-grow: 1;
 }
 
+.beerinfo ul li span {
+  color: var(--color-highlight);
+}
+
 .untappd {
+  margin: 2em auto;
   text-align: center;
 }
 
