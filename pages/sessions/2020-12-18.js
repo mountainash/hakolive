@@ -2,10 +2,10 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../../styles/Session.module.scss'
-import SwiperCore, { Navigation, Pagination, A11y, Keyboard, Mousewheel } from 'swiper'
+import SwiperCore, { Navigation, Pagination, A11y, Keyboard } from 'swiper'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
-SwiperCore.use([Navigation, Pagination, A11y, Keyboard, Mousewheel]);
+SwiperCore.use([Navigation, Pagination, A11y, Keyboard]);
 
 const Code = (p) => <code className={styles.inlineCode} {...p} />
 
@@ -224,7 +224,6 @@ export default function FirstProst() {
 					navigation
 					pagination
 					keyboard={{ enabled: true }}
-					mousewheel={{ enabled: true }}
 					onSwiper={(swiper) => console.log(swiper)}
 					onSlideChange={(swiper) => console.log('slide change: ', swiper.activeIndex)}
 					>
