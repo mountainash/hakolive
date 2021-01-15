@@ -146,8 +146,10 @@ export default function FirstProst() {
 	const slides = sessiondata.map(function (beer, index) {
 		return <SwiperSlide className={styles.swiperslide} key={`beer${index}`}>
 			<div className={styles.beerinfo}>
-				<h2><span className={styles.brand}>{beer.brand}</span> - <span className={styles.name}>{beer.name}</span></h2>
-				<p className={styles.description}>{beer.description}</p>
+				<h2><span className={styles.brand}>{beer.brand}</span> &nbsp; <span className={styles.name}>{beer.name}</span></h2>
+				{beer.description &&
+					<p className={styles.description}>{beer.description}</p>
+				}
 				<ul>
 					{beer.style &&
 						<li>
@@ -156,16 +158,16 @@ export default function FirstProst() {
 						</li>
 					}
 					{beer.alco &&
-					<li>
-						<strong>Style</strong>
-						<span>{beer.alco}%</span>
-					</li>
+						<li>
+							<strong>Style</strong>
+							<span>{beer.alco}%</span>
+						</li>
 					}
 					{beer.ibu &&
-					<li>
-						<strong>IBU</strong>
-						<span>{beer.ibu}</span>
-					</li>
+						<li>
+							<strong>IBU</strong>
+							<span>{beer.ibu}</span>
+						</li>
 					}
 				</ul>
 				{beer.rating &&
@@ -194,7 +196,7 @@ export default function FirstProst() {
 						src={beer.image}
 						alt={`Photo of ${beer.name}`}
 						width={200}
-						height={500}
+						height={540}
 						layout="responsive"
 					/>
 				</div>
@@ -224,8 +226,6 @@ export default function FirstProst() {
 					navigation
 					pagination
 					keyboard={{ enabled: true }}
-					onSwiper={(swiper) => console.log(swiper)}
-					onSlideChange={(swiper) => console.log('slide change: ', swiper.activeIndex)}
 					>
 						{slides}
 				</Swiper>

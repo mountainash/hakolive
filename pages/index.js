@@ -23,7 +23,7 @@ export default function Home() {
           <ul>
             <li>
             <Link href="/sessions/2020-12-18">
-              <a>Hakodicht@home IV - Fri, 18 Dec 2020</a>
+              <a><strong>Hakodicht@home IV</strong> <span>Fri, 18 Dec 2020</span></a>
             </Link>
             </li>
           </ul>

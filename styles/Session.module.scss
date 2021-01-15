@@ -1,6 +1,7 @@
-.meta header h1 {
-	margin: 0;
+.meta h1 {
+	margin: .5em 0 .25em;
 	text-align: center;
+	font-size: 3rem;
 }
 
 .image {
@@ -19,14 +20,13 @@
 }
 .swipercontainer {
 	max-width: 900px;
-	// height: 90vh;
 	margin: 0 auto;
 	padding: 1em 3em 3em;
 }
 .swiperslide {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 3em 3em 0;
+	margin: 1.5em 0 0;
+	padding: 3em;
 	border-radius: 10px;
 	background :rgb(204,191,176);
 	box-shadow: inset 0 0 2em rgba(0,0,0,.125);
@@ -42,15 +42,20 @@
 	align-content: center;
 
 	width: 100%;
+	max-width: 500px;
 
 	animation-name: fadeIn;
 	animation-duration: .7s;
 	animation-fill-mode: both;
 
 	h2 {
-		margin-top: 0;
+		margin: 0 0 .5em;
 		text-align: center;
+		font-size: 2em;
 
+		span {
+			white-space: nowrap;
+		}
 		.brand {
 			color: var(--color-highlight);
 		}
@@ -61,6 +66,7 @@
 		justify-content: space-between;
 		align-self: center;
 		width: 100%;
+		padding-left: 0;
 
 		li {
 			display: flex;
@@ -71,6 +77,10 @@
 			span {
 				flex-basis: 0;
 				flex-grow: 1;
+				margin: 0 5px;
+			}
+			strong {
+				text-align: right;
 			}
 			span {
 				color: var(--color-highlight);
@@ -79,27 +89,52 @@
 	}
 }
 .untappd {
-	margin: 2em auto;
 	text-align: center;
 
 	a {
 		display: inline-block;
-		padding: 1em;
-		background: rgb(255,203,5);
+		padding: 10px 15px;
+		border: 2px solid rgb(255,203,5);
 		border-radius: 30px;
 		text-decoration: none;
 		text-align: center;
+		font-size: small;
 		font-weight: bold;
 		line-height: 1;
-		color: rgb(62,51,34);
+		font-family: Arial, Helvetica, sans-serif;
+		color: var(--color-text);
+		opacity: .8;
+
+		&:hover,
+		&:focus {
+			opacity: 1;
+			background: rgb(255,203,5);
+		}
 	}
 }
 
 @keyframes fadeIn {
- 0% {
-  opacity: 0
- }
- to {
-  opacity: 1
- }
+	0% {
+		opacity: 0
+	}
+	to {
+		opacity: 1
+	}
+}
+
+@media (max-width:700px) {
+	.meta h1 {
+		font-size: 2em;
+	}
+	.beerinfo h2 {
+		font-size: 1.2em;
+	}
+	.swiperslide {
+		display: block;
+		padding: 1em;
+	}
+	.image {
+		width: 100%;
+		text-align: center;
+	}
 }
