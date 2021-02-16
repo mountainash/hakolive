@@ -26,6 +26,11 @@ export default function Home() {
               <a><strong>Hakodicht@home IV</strong> <span>Fri, 18 Dec 2020</span></a>
             </Link>
             </li>
+            <li>
+            <Link href="/sessions/2021-02-19">
+              <a><strong>Hakodicht@home V</strong> <span>Fri, 19 Feb 2021</span></a>
+            </Link>
+            </li>
           </ul>
         </div>
 
