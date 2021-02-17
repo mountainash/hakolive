@@ -2,12 +2,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../../styles/Session.module.scss'
-import SwiperCore, { Navigation, Pagination, A11y, Keyboard } from 'swiper'
-import { Swiper, SwiperSlide } from 'swiper/react'
-
-SwiperCore.use([Navigation, Pagination, A11y, Keyboard]);
-
-const Code = (p) => <code className={styles.inlineCode} {...p} />
 
 export default function FirstProst() {
 
@@ -143,11 +137,11 @@ export default function FirstProst() {
 				fetched: '2021-02-16'
 			},
 			untappd: 'https://untappd.com/b/blackwell-brewery-m-kka-wild-ale/3908020'
-		},
+		}
 	];
 
 	const slides = sessiondata.map(function (beer, index) {
-		return <SwiperSlide className={styles.swiperslide} key={`beer${index}`}>
+		return <div className={styles.beer}>
 			<div className={styles.beerinfo}>
 				<h2><span className={styles.brand}>{beer.brand}</span> &nbsp; <span className={styles.name}>{beer.name}</span></h2>
 				{beer.description &&
@@ -204,7 +198,7 @@ export default function FirstProst() {
 					/>
 				</div>
 			}
-		</SwiperSlide>
+		</div>
 	});
 
 	return (
@@ -221,17 +215,7 @@ export default function FirstProst() {
 				</header>
 			</div>
 			<main className={styles.main}>
-				<Swiper
-					tag="section"
-					className={styles.swipercontainer}
-					slidesPerView={1}
-					spaceBetween={50}
-					navigation
-					pagination
-					keyboard={{ enabled: true }}
-					>
 						{slides}
-				</Swiper>
 			</main>
 		</div>
 	)

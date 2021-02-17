@@ -4,10 +4,6 @@
 	--color-text: #252822;
 	--color-link: #ad1313;
 	--color-highlight: #713319;
-
-	/* Swipper overrides */
-	--swiper-theme-color: var(--color-link);
-	--swiper-navigation-size: 35px;
 }
 
 body {
@@ -49,19 +45,5 @@ footer {
 	}
 	img {
 		margin-left: 0.5rem;
-	}
-}
-
-
-.swiper-container-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-custom,
-.swiper-pagination-fraction {
-	top: 0;
-	bottom: auto;
-}
-@media (max-width:700px) {
-	.swiper-button-prev,
-	.swiper-button-next {
-		top: 20px;
 	}
 }

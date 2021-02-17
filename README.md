@@ -4,7 +4,7 @@ https://hakolive.vercel.app
 
 ## What is Hako?
 
-Hako is a small (physically - it's a small shop) Craft Beer shop in Winterthur (the 5/6th biggest city in small Switzerland). While they are still open in these times of COVID, they can't run their usual in-store dégustation and have resorted to sending out a harsé of 10 beers and holding a Zoom meetup about once a month (fun times!).
+Hako is a small (physically - it's a small shop) Craft Beer shop in Winterthur (the 5th largest city in small Switzerland). While they are still open in these times of COVID, they can't run their usual in-store dégustation, so have resorted to sending out a harsé of 10 beers and holding a Zoom meetup about once a month (fun times!).
 
 ## But what is this repo for?
 
@@ -12,16 +12,13 @@ As a web nerd I decided to hack together some kind of mashup between the beers t
 
 ## Why?
 
-Well, I wanted too!?!
-
-AND I'm applying for a job at a workplace that has React and Next.js requirements which I don't yet have... time for some JIT coding - I also noticed that their own website is hosted on [vercel.app](https://vercel.app/) which provides free hosting - see the output at https://hakolive.vercel.app
+Many Software Developer roles in Zürich require React (and/or Next.js) requirements which I don't yet have... time for some JIT coding and this was the first idea that came into my head (...I may have been drinking beer at the time).
 
 ---
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
-
 ### Shell
 
 1. `npm run dev` OR `yarn dev`
@@ -50,4 +47,4 @@ To learn more about Next.js, take a look at the following resources:
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+One way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.

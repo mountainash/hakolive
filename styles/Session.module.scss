@@ -18,12 +18,12 @@
 		transition: filter .36s ease-in;
 	}
 }
-.swipercontainer {
+.main {
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 1em 3em 3em;
 }
-.swiperslide {
+.beer {
 	box-sizing: border-box;
 	margin: 1.5em 0 0;
 	padding: 3em;
@@ -128,10 +128,6 @@
 	}
 	.beerinfo h2 {
 		font-size: 1.2em;
-	}
-	.swiperslide {
-		display: block;
-		padding: 1em;
 	}
 	.image {
 		width: 100%;

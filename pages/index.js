@@ -23,12 +23,12 @@ export default function Home() {
           <ul>
             <li>
             <Link href="/sessions/2020-12-18">
-              <a><strong>Hakodicht@home IV</strong> <span>Fri, 18 Dec 2020</span></a>
+              <a><strong>Hakodicht@home IV</strong> <span>Fri, 18 Dec 2020</span> &rarr;</a>
             </Link>
             </li>
             <li>
             <Link href="/sessions/2021-02-19">
-              <a><strong>Hakodicht@home V</strong> <span>Fri, 19 Feb 2021</span></a>
+              <a><strong>Hakodicht@home V</strong> <span>Fri, 19 Feb 2021</span> &rarr;</a>
             </Link>
             </li>
           </ul>
@@ -36,21 +36,21 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="https://www.hakogetraenke.ch/?utm_source=mountainashhakolive" className={styles.card}>
-            <h3>What is Hako? &rarr;</h3>
-            <p>Hako is a small (physically - it's a small shop) Craft Beer shop in Winterthur (the 5/6th biggest city in small Switzerland). While they are still open in these times of COVID, they can't run their usual in-store detestation and have resorted to sending out a harass of 10 beers and holding a Zoom meetup about once every two months (fun times!).</p>
+            <h3>What is Hako?&nbsp;&rarr;</h3>
+            <p>Hako is a small (physically - it's a small shop) Craft Beer shop in Winterthur (the 5th largest city in small Switzerland). While they are still open in these times of COVID, they can't run their usual in-store detestation, so have resorted to sending out a harass of 10 beers and holding a Zoom meetup about once every two months (fun times!).</p>
           </a>
 
           <a href="https://github.com/mountainash/hakolive" className={styles.card}>
-            <h3>But what is this repo for? &rarr;</h3>
+            <h3>But what is this repo for?&nbsp;&rarr;</h3>
             <p>As a web nerd I decided to hack together some kind of mashup between the beers that Hako picks for the session and Untappd (a very popular beer-drinking social network).</p>
           </a>
 
           <a
-            href="https://hakolive.vercel.app"
+            href="https://hakolive.vercel.app/"
             className={styles.card}
           >
-            <h3>Why? &rarr;</h3>
-            <p>Well, I wanted too!?! AND I'm applying for a job at a workplace that has React and Next.js requirements which I don't yet have... time for some JIT coding - I also noticed that their own website is hosted on <a href="https://vercel.app/">vercel.app</a> which provides free hosting - see the output at https://hakolive.vercel.app</p>
+            <h3>Why?&nbsp;&rarr;</h3>
+            <p>Many Software Developer roles in Zürich require React (and/or Next.js) requirements which I don't yet have... time for some JIT coding and this was the first idea that came into my head (...I may have been drinking beer at the time).</p>
           </a>
         </div>
       </main>
