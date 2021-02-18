@@ -1,0 +1,14 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://hakolive.vercel.app</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://hakolive.vercel.app/sessions/2020-12-18</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+  <url>
+    <loc>https://hakolive.vercel.app/sessions/2021-02-19</loc>
+    <changefreq>hourly</changefreq>
+  </url>
+</urlset>

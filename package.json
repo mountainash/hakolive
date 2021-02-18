@@ -1,16 +1,38 @@
 {
   "name": "hakolive",
-  "version": "0.4.0",
-  "private": true,
+  "version": "0.6.0",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "next": "10.0.0",
+    "next": "^10.0.7",
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "sass": "^1.30.0"
-  }
+  },
+  "devDependencies": {
+    "globby": "^11.0.2"
+  },
+  "author": {
+    "name": "Mountain/\\Ash"
+  },
+  "homepage": "https://github.com/mountainash/hakolive",
+  "bugs": {
+    "url": "https://github.com/mountainash/hakolive/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:mountainash/hakolive.git"
+  },
+  "keywords": [
+    "beer",
+    "nextjs",
+    "hako",
+    "untappd",
+    "Winterthur",
+    "Switzerland"
+  ]
 }
