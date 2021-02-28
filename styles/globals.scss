@@ -16,10 +16,6 @@ body {
 }
 
 a {
-	color: inherit;
-	text-decoration: none;
-}
-a {
 	color: var(--color-link);
 	text-decoration: none;
 
@@ -27,6 +23,14 @@ a {
 	&:focus,
 	&:active {
 		text-decoration: underline;
+	}
+}
+
+header {
+	h1 {
+		margin: .5em 0 .25em;
+		text-align: center;
+		font-size: 3rem;
 	}
 }
 

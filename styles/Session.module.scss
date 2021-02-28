@@ -1,9 +1,6 @@
-.meta h1 {
-	margin: .5em 0 .25em;
+.breadcrumb {
 	text-align: center;
-	font-size: 3rem;
 }
-
 .image {
 	filter: grayscale(1) contrast(1.6) brightness(0.95);
 	mix-blend-mode: multiply;
@@ -19,13 +16,22 @@
 	}
 }
 .main {
+	display: flex;
 	max-width: 900px;
 	margin: 0 auto;
 	padding: 1em 3em 3em;
+
+	ol {
+		margin: 1.5em auto 0;
+
+		li {
+			text-indent: 15px;
+		}
+	}
 }
 .beer {
 	box-sizing: border-box;
-	margin: 1.5em 0 0;
+	margin: 1.5em auto 0;
 	padding: 3em;
 	border-radius: 10px;
 	background :rgb(204,191,176);

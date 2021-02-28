@@ -22,12 +22,12 @@ export default function Home() {
         <div className={styles.list}>
           <ul>
             <li>
-            <Link href="/sessions/2020-12-18">
+            <Link href="/session/[date]" as="/session/2020-12-18">
               <a><strong>Hakodicht@home IV</strong> <span>Fri, 18 Dec 2020</span> &rarr;</a>
             </Link>
             </li>
             <li>
-            <Link href="/sessions/2021-02-19">
+            <Link href="/session/[date]" as="/session/2021-02-19">
               <a><strong>Hakodicht@home V</strong> <span>Fri, 19 Feb 2021</span> &rarr;</a>
             </Link>
             </li>
