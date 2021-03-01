@@ -39,7 +39,7 @@ const Session = ({beers}) => {
 // This function gets called at build time
 export const getStaticPaths = async () => {
 	// Call an external API endpoint to get posts
-	const res = await fetch(`${process.env.WEBSITE_URL}/api/beers?all=1`)
+	const res = await fetch(`${process.env.VERCEL_URL}/api/beers?all=1`)
 	const sessiondata = await res.json()
 	let paths = new Array();
 
@@ -57,7 +57,7 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params }) => {
-	const res = await fetch(`${process.env.WEBSITE_URL}/api/beers?date=${params.date}`) // Call API endpoint to get beers for the session
+	const res = await fetch(`${process.env.VERCEL_URL}/api/beers?date=${params.date}`) // Call API endpoint to get beers for the session
 	const beers = await res.json()
 
 	return { props: { beers } }
