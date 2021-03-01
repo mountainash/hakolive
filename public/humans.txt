@@ -1,6 +1,16 @@
+## Concept & Execution
+- @mountainash
 
-# Icons
+## SCM
+- Github
 
-Hops: https://thenounproject.com/amoghdesign
-Beer pack: https://thenounproject.com/CreativeMania/
-Truck: https://thenounproject.com/strongicon
+## Hosting & CI/CD
+- Vercel
+
+## Fonts
+- Google Fonts
+
+## Icons
+- Hops: https://thenounproject.com/amoghdesign
+- Beer pack: https://thenounproject.com/CreativeMania/
+- Truck: https://thenounproject.com/strongicon

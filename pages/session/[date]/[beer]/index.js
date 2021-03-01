@@ -28,7 +28,7 @@ const Beer = ({beers}) => {
 			<main className={styles.main}>
 				<div className={styles.beer}>
 					<div className={styles.beerinfo}>
-						<h2><span className={styles.brand}>{info.brand}</span> &nbsp; <span className={styles.name}>{info.name}</span></h2>
+						<h2><span className={styles.brand}>{info.brand}</span> <span className={styles.name}>{info.name}</span></h2>
 						{info.description &&
 							<p className={styles.description}>{info.description}</p>
 						}

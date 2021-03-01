@@ -24,11 +24,15 @@ const Session = ({beers}) => {
 			</div>
 
 			<main className={styles.main}>
+				<p className={styles.date}>
+					{date}
+				</p>
+
 				<ol>
 				{beers.map((beer, index) => (
 					<li key={index}>
 						<Link href="/session/[date]/[beer]" as={`/session/${date}/${index}`}>
-							<a>{beer.brand} - {beer.name}</a>
+							<a><span className={styles.brand}>{beer.brand}</span> - {beer.name}</a>
 						</Link>
 					</li>
 				))}

@@ -36,7 +36,6 @@ const sessiondata = {
 				count: 1232,
 				fetched: '2020-12-16'
 			},
-			image: '/img/erusbacher-paul-bier-paul-01.png',
 			untappd: 'https://untappd.com/b/erusbacher-paul-bier-paul-01/26411'
 		},
 		{
