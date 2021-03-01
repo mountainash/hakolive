@@ -1,14 +1,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-	<url>
-		<loc>https://hakolive.vercel.app</loc>
+  <url>
+		<loc>http://localhost:3000</loc>
 		<changefreq>hourly</changefreq>
 	</url>
-	<url>
-		<loc>https://hakolive.vercel.app/sessions/[date]</loc>
+  <url>
+		<loc>http://localhost:3000/session/[date]/index</loc>
 		<changefreq>hourly</changefreq>
 	</url>
-	<url>
-		<loc>https://hakolive.vercel.app/sessions/[date]/[beer]</loc>
+  <url>
+		<loc>http://localhost:3000/session/[date]/[beer]/index</loc>
 		<changefreq>hourly</changefreq>
 	</url>
 </urlset>

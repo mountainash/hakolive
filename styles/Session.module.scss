@@ -1,3 +1,5 @@
+@import 'mixins';
+
 .breadcrumb {
 	text-align: center;
 
@@ -37,7 +39,6 @@
 
 	ol {
 		margin: 1.5em auto 0;
-		// list-style: none;
 
 		li {
 			margin-bottom: 1em;
@@ -46,16 +47,21 @@
 	}
 
 	a {
+		display: block;
 		padding: 5px 10px;
 		border: 2px solid var(--color-secondary);
 		background: var(--color-background);
 		text-decoration: none;
 		color: var(--color-text);
-		font-family: var(--font-primary);
+
+		@include heading;
 
 		&:hover,
 		&:focus {
 			border-color: var(--color-primary);
+		}
+		&::first-letter {
+			font-size: 120%;
 		}
 	}
 }
@@ -88,11 +94,25 @@
 		text-align: center;
 		font-size: 2em;
 
+		@include heading;
+
 		span {
+			display: inline-block;
 			white-space: nowrap;
+
+			&::first-letter {
+				font-size: 120%;
+			}
 		}
 		.brand {
 			color: var(--color-secondary);
+		}
+		&:after {
+			content: '';
+			display: block;
+			margin: 1rem auto;
+			height: 200px;
+			background: center / contain no-repeat url('/img/beerpack.svg');
 		}
 	}
 	ul {
@@ -138,6 +158,8 @@
 		font-family: Arial, Helvetica, sans-serif;
 		color: var(--color-text);
 		opacity: .8;
+
+		@include heading;
 
 		&:hover,
 		&:focus {

@@ -1,7 +1,8 @@
+@import 'mixins';
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Rokkitt:wght@300&display=swap');
 
 :root {
-	--color-background: #f3e7d9; /* cream */
+	--color-background: #f3e7d9c1; /* cream */
 	--color-primary: #183C50; /* olive */
 	--color-secondary: #b27942; /* mustard */
 	--color-text: #183C50;
@@ -35,8 +36,20 @@ header {
 	h1 {
 		margin: .5em 0 .25em;
 		text-align: center;
-		font-family: var(--font-primary);
 		font-size: 3rem;
+
+		@include heading;
+
+		&::first-letter,
+		strong::first-letter {
+			font-size: 120%;
+		}
+		strong {
+			display: inline-block;
+		}
+	}
+	a {
+		background: var(--color-background);
 	}
 }
 
