@@ -18,6 +18,10 @@ const Handler = (req, res) => {
    res.status(200).json(response)
 }
 
+export const getBeers = () => {
+  return sessiondata
+}
+
 const sessiondata = {
 	'2020-12-18': [
 		{

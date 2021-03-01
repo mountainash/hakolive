@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import { server } from '../../../../config'
+import { getBeers } from '../../../../pages/api/beers'
 import Head from 'next/head'
 import Header from '../../../../components/header'
 import Link from 'next/link'
@@ -89,8 +90,7 @@ const Beer = ({beers}) => {
 }
 
 export const getStaticPaths = async () => {
-	const res = await fetch(`${server}/api/beers?all=1`)
-	const sessiondata = await res.json()
+	const sessiondata = getBeers()
 	let paths = new Array();
 
 	Object.entries(sessiondata).forEach(([date, value]) => {

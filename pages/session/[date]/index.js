@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import { server } from '../../../config'
+import { getBeers } from '../../../pages/api/beers'
 import Head from 'next/head'
 import Header from '../../../components/header'
 import Link from 'next/link'
@@ -39,9 +40,7 @@ const Session = ({beers}) => {
 
 // This function gets called at build time
 export const getStaticPaths = async () => {
-	// Call an external API endpoint to get posts
-	const res = await fetch(`${server}/api/beers?all=1`)
-	const sessiondata = await res.json()
+	const sessiondata = getBeers()
 	let paths = new Array();
 
 	// Get the paths we want to pre-render based on posts

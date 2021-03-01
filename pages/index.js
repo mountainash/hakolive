@@ -7,7 +7,6 @@ export default function Home() {
 	<div className={styles.container}>
 		<Head>
 			<title>Hako Live</title>
-			<link rel="icon" href="/favicon.ico" />
 		</Head>
 
 		<header>
