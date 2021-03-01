@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import { server } from '../../../../config'
 import Head from 'next/head'
 import Header from '../../../../components/header'
 import Link from 'next/link'
@@ -88,7 +89,7 @@ const Beer = ({beers}) => {
 }
 
 export const getStaticPaths = async () => {
-	const res = await fetch(`${process.env.VERCEL_URL}/api/beers?all=1`)
+	const res = await fetch(`${server}/api/beers?all=1`)
 	const sessiondata = await res.json()
 	let paths = new Array();
 
@@ -102,7 +103,7 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params }) => {
-	const res = await fetch(`${process.env.VERCEL_URL}/api/beers?date=${params.date}`)
+	const res = await fetch(`${server}/api/beers?date=${params.date}`)
 	const beers = await res.json()
 
 	return { props: { beers } }
