@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
-import Link from 'next/link'
 import Header from '../../../components/header'
+import Link from 'next/link'
 import styles from '../../../styles/Session.module.scss'
 
 const Session = ({beers}) => {
@@ -17,7 +17,7 @@ const Session = ({beers}) => {
 
 			<div className={styles.breadcrumb}>
 				<Link href="/">
-				<a>&larr; <span>Home</span></a>
+					<a>&larr; <span>Home</span></a>
 				</Link>
 			</div>
 

@@ -4,11 +4,11 @@
 		<changefreq>hourly</changefreq>
 	</url>
 	<url>
-		<loc>https://hakolive.vercel.app/session/[date]</loc>
+		<loc>https://hakolive.vercel.app/sessions/[date]</loc>
 		<changefreq>hourly</changefreq>
 	</url>
 	<url>
-		<loc>https://hakolive.vercel.app/session/[date]/[beer]</loc>
+		<loc>https://hakolive.vercel.app/sessions/[date]/[beer]</loc>
 		<changefreq>hourly</changefreq>
 	</url>
 </urlset>

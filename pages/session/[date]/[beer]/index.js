@@ -19,7 +19,7 @@ const Beer = ({beers}) => {
 
 			<div className={styles.breadcrumb}>
 				<Link href="/session/[date]" as={`/session/${date}`}>
-				<a>&larr; <span>{date}</span></a>
+					<a>&larr; <span>{date}</span></a>
 				</Link>
 			</div>
 
