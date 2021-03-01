@@ -103,8 +103,8 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params }) => {
-	const res = await fetch(`${server}/api/beers?date=${params.date}`)
-	const beers = await res.json()
+	const sessiondata = getBeers()
+	const beers = sessiondata[params.date]
 
 	return { props: { beers } }
 }
