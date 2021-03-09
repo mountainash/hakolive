@@ -1,11 +1,12 @@
 {
   "name": "hakolive",
-  "version": "0.6.0",
+  "version": "1.1.0",
   "license": "MIT",
   "scripts": {
     "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "next": "^10.0.7",
@@ -14,7 +15,7 @@
     "sass": "^1.32.8"
   },
   "devDependencies": {
-    "globby": "^11.0.2"
+    "next-sitemap": "^1.5.16"
   },
   "author": {
     "name": "Mountain/\\Ash"

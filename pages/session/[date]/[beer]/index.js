@@ -1,5 +1,4 @@
 import { useRouter } from 'next/router'
-import { server } from '../../../../config'
 import { getBeers } from '../../../../pages/api/beers'
 import Head from 'next/head'
 import Header from '../../../../components/header'
