@@ -1,14 +1,10 @@
-import { useRouter } from 'next/router'
-import { getBeers } from '../../../pages/api/beers'
+import { sessionData } from '../../../components/sessionData'
 import Head from 'next/head'
 import Header from '../../../components/header'
 import Link from 'next/link'
 import styles from '../../../styles/Session.module.scss'
 
-const Session = ({beers}) => {
-	const router = useRouter()
-	const { date } = router.query
-
+const Session = ({date, beers}) => {
 	return (
 		<>
 			<Head>
@@ -43,27 +39,23 @@ const Session = ({beers}) => {
 
 // This function gets called at build time
 export const getStaticPaths = async () => {
-	const sessiondata = getBeers()
+	const sessions = sessionData()
 	let paths = new Array();
 
 	// Get the paths we want to pre-render based on posts
-	Object.entries(sessiondata).forEach(([date, value]) => {
-		// paths.push('/session/'+date)
+	Object.entries(sessions).forEach(([date, value]) => {
 		paths.push({ params: { 'date': date } })
-		value.forEach((beer, index) => {
-			paths.push({ params: { 'date': date, 'beer': index.toString() } })
-			// paths.push('/session/'+date+'/'+index)
-		})
 	})
 
 	return { paths, fallback: false } // { fallback: false } means other routes should 404
 }
 
 export const getStaticProps = async ({ params }) => {
-	const sessiondata = getBeers()
-	const beers = sessiondata[params.date]
+	const sessions = sessionData()
+	const date = params.date
+	const beers = sessions[date]
 
-	return { props: { beers } }
+	return { props: { date, beers } }
 }
 
 export default Session
