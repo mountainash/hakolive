@@ -36,7 +36,7 @@ const Beer = ({date, info}) => {
 							}
 							{info.untappd.alco &&
 								<li>
-									<strong>Style</strong>
+									<strong>ABV</strong>
 									<span>{info.untappd.alco}%</span>
 								</li>
 							}

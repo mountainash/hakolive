@@ -9,9 +9,9 @@ export const enrichBeer = async (beer) => {
 		untappd: {
 			description: fetchData?.response?.beer?.beer_description,
 			style: fetchData?.response?.beer?.beer_style,
-			alco: fetchData?.response?.beer?.beer_abv,
-			ibu: fetchData?.response?.beer?.beer_ibu,
-			count: fetchData?.response?.beer?.stats?.total_count,
+			alco: fetchData?.response?.beer?.beer_abv || null,
+			ibu: fetchData?.response?.beer?.beer_ibu || null,
+			count: fetchData?.response?.beer?.stats?.total_count || null, // if the value if 0, then don't show the field
 			url: `https://untappd.com/b/${fetchData?.response?.beer?.beer_slug}/${fetchData?.response?.beer?.bid}`,
 			image: fetchData?.response?.beer?.beer_label,
 		}
