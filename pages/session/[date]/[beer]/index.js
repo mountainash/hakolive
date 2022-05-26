@@ -72,9 +72,7 @@ const Beer = ({date, info}) => {
 							<Image
 								src={info.untappd.image}
 								alt={`Photo of ${info.name}`}
-								width={200}
-								height={540}
-								layout="responsive"
+								layout="fill"
 							/>
 						</div>
 				}
