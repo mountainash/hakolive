@@ -1,6 +1,6 @@
 {
   "name": "hakolive",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "NODE_OPTIONS='--inspect' next dev",
@@ -9,13 +9,13 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
-    "next": "^10.0.7",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
-    "sass": "^1.32.8"
+    "next": "^12.1.6",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "sass": "^1.52.1"
   },
   "devDependencies": {
-    "next-sitemap": "^1.5.16"
+    "next-sitemap": "^2.5.22"
   },
   "author": {
     "name": "Mountain/\\Ash"

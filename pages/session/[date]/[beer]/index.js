@@ -1,20 +1,16 @@
-import { useRouter } from 'next/router'
-import { getBeers } from '../../../../pages/api/beers'
+import { enrichBeer } from '../../../../components/enrichBeer'
+import { sessionData } from '../../../../components/sessionData'
 import Head from 'next/head'
 import Header from '../../../../components/header'
 import Link from 'next/link'
 import Image from 'next/image'
 import styles from '../../../../styles/Session.module.scss'
 
-const Beer = ({beers}) => {
-	const router = useRouter()
-	const { date, beer } = router.query
-	const info = beers[beer]
-
+const Beer = ({date, info}) => {
 	return (
 		<>
 			<Head>
-				<title>Hako Live - {date} - {beer.brand} {beer.name}</title>
+				<title>Hako Live - {date} - {info.brand} {info.name}</title>
 			</Head>
 			<Header />
 
@@ -28,26 +24,28 @@ const Beer = ({beers}) => {
 				<div className={styles.beer}>
 					<div className={styles.beerinfo}>
 						<h2><span className={styles.brand}>{info.brand}</span> <span className={styles.name}>{info.name}</span></h2>
-						{info.description &&
-							<p className={styles.description}>{info.description}</p>
+						{info.untappd.description &&
+							<p className={styles.description}>{info.untappd.description}</p>
 						}
+					</div>
+					<div className={styles.beermeta}>
 						<ul>
-							{info.style &&
+							{info.untappd.style &&
 								<li>
 									<strong>Style</strong>
-									<span>{info.style}</span>
+									<span>{info.untappd.style}</span>
 								</li>
 							}
-							{info.alco &&
+							{info.untappd.alco &&
 								<li>
-									<strong>Style</strong>
-									<span>{info.alco}%</span>
+									<strong>ABV</strong>
+									<span>{info.untappd.alco}%</span>
 								</li>
 							}
-							{info.ibu &&
+							{info.untappd.ibu &&
 								<li>
 									<strong>IBU</strong>
-									<span>{info.ibu}</span>
+									<span>{info.untappd.ibu}</span>
 								</li>
 							}
 						</ul>
@@ -67,18 +65,16 @@ const Beer = ({beers}) => {
 								</li>
 							</ul>
 						}
-						{info.untappd &&
-							<p className={styles.untappd}><a href={info.untappd}>Untappd</a></p>
+						{info.untappd.url &&
+							<p className={styles.untappd}><a href={info.untappd.url}>Untappd</a></p>
 						}
 					</div>
-					{info.image &&
+					{info.untappd.image &&
 						<div className={styles.image}>
 							<Image
-								src={info.image}
+								src={info.untappd.image}
 								alt={`Photo of ${info.name}`}
-								width={200}
-								height={540}
-								layout="responsive"
+								layout="fill"
 							/>
 						</div>
 				}
@@ -89,10 +85,10 @@ const Beer = ({beers}) => {
 }
 
 export const getStaticPaths = async () => {
-	const sessiondata = getBeers()
+	const sessions = sessionData()
 	let paths = new Array();
 
-	Object.entries(sessiondata).forEach(([date, value]) => {
+	Object.entries(sessions).forEach(([date, value]) => {
 		value.forEach((beer, index) => {
 			paths.push({ params: { 'date': date, 'beer': index.toString() } })
 		})
@@ -102,10 +98,14 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params }) => {
-	const sessiondata = getBeers()
-	const beers = sessiondata[params.date]
+	const sessions = sessionData()
+	const date = params.date
+	const session = sessions[date]
+	const beerNo = params.beer
+	const beer = session[beerNo]
+	const info = await enrichBeer(beer)
 
-	return { props: { beers } }
+	return { props: { date, info } }
 }
 
 export default Beer

@@ -18,17 +18,24 @@
 	}
 }
 .image {
-	filter: grayscale(1) contrast(1.6) brightness(0.95);
-	mix-blend-mode: multiply;
-	object-fit: cover;
-	transition: filter .36s ease-in;
-	animation-name: fadeIn;
-	animation-duration: .7s;
-	animation-fill-mode: both;
+	position: relative;
+	min-width: 200px;
 
-	&:hover {
-		filter: none;
+	& img {
+		width: 100%;
+		height: auto !important;
+		min-height: 0 !important;
+		filter: grayscale(1) contrast(1.6) brightness(0.95);
+		mix-blend-mode: multiply;
 		transition: filter .36s ease-in;
+		animation-name: fadeIn;
+		animation-duration: .7s;
+		animation-fill-mode: both;
+
+		&:hover {
+			filter: none;
+			transition: filter .36s ease-in;
+		}
 	}
 }
 .main {
@@ -103,24 +110,21 @@
 	color: var(--color-secondary);
 }
 .beer {
+	display: flex;
+	flex-direction: row-reverse;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	column-gap: 1em;
+
 	box-sizing: border-box;
 	margin: 1.5em auto 0;
 	padding: 3em;
 	background: var(--color-background);
 	box-shadow: inset 0 0 10px var(--color-secondary);
-
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-around;
-	align-items: stretch;
+	text-align: center;
 }
 .beerinfo {
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-
 	width: 100%;
-	max-width: 500px;
 
 	animation-name: fadeIn;
 	animation-duration: .7s;
@@ -128,7 +132,6 @@
 
 	h2 {
 		margin: 0;
-		text-align: center;
 		font-size: 200%;
 		line-height: 1;
 
@@ -142,11 +145,15 @@
 			}
 		}
 	}
+}
+.beermeta {
+	flex: 1;
+	max-width: 500px;
+
 	ul {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		align-self: center;
 		width: 100%;
 		padding-left: 0;
 
@@ -164,6 +171,7 @@
 				text-align: right;
 			}
 			span {
+				text-align: left;
 				color: var(--color-secondary);
 			}
 		}
