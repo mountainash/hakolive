@@ -27,6 +27,8 @@ const Beer = ({date, info}) => {
 						{info.untappd.description &&
 							<p className={styles.description}>{info.untappd.description}</p>
 						}
+					</div>
+					<div className={styles.beermeta}>
 						<ul>
 							{info.untappd.style &&
 								<li>
