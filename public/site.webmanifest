@@ -1,0 +1,12 @@
+{
+	"short_name": "HAKO LIVE",
+	"name": "HAKO LIVE",
+	"icons": [{
+	  "src": "/public/img/beerpack.svg",
+	  "type": "image/png",
+	  "sizes": "158x158"
+	}],
+	"start_url": "/",
+	"background_color": "#b27942",
+	"theme_color": "#b27942"
+  }
