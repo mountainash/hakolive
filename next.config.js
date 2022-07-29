@@ -5,6 +5,9 @@ module.exports = {
 		includePaths: [path.join(__dirname, 'styles')],
 	},
 	images: {
-		domains: ['untappd.akamaized.net'],
+		domains: [
+			'untappd.akamaized.net',
+			'assets.untappd.com',
+		],
 	},
 }
