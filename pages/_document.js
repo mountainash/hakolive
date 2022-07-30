@@ -1,12 +1,13 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
-import DefaultMeta from '../components/beer-meta'
+import HeadMeta from '../components/headMeta'
 
 class MyDocument extends Document {
   render() {
 	return (
 		<Html lang="en">
-		<Head />
-		<DefaultMeta />
+		<Head>
+			<HeadMeta />
+		</Head>
 		<body>
 		  <Main />
 		  <NextScript />
